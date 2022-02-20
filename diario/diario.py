@@ -15,6 +15,10 @@
         print() = imprime qualquer coisa
         len() = retorna a quantidade de elementos de qualquer lista, retorna um int
         pass = placeholder
+        continue = não vai ler as linhas de código posteriores
+        break = ela finaliza o laço
+        (x += 1) == (x = x + 1)
+        iteração = passar por cada um dos elementos de uma string, passar pelos índices
 
     1. Formatando valores com modificadores:
         :s = Texto (str)
@@ -96,12 +100,36 @@
                     print("Nada a ser impresso")
 
     9. Laços:
-        While
+        While = Enquanto
+            Ex: No código abaixo percebe-se duas variáveis em que seus nomes já são auto-explicativos
+                contador = 1
+                    conta de forma linear
+                acumulador = 1
+                    acumula valores ao longo do laço
+
+                while contador <= 10:
+                    print(contador, acumulador)
+
+                    acumulador = acumulador + contador
+                    contador += 1
+                else:
+                    print('Final do laço')
+            Ex: No laço while podemos utilizar o contador para ele iterar uma string
+                frase = 'O rato roeu a roupa do rei de roma' # Iterável
+                tamanho_frase = len(frase)
+                contador = 0
+
+                while contador < 10: # Iteração / Iterar
+                    # na linha abaixo o contador passa a ser o índice da frase e,
+                    vai iterando a cada vez que o índice é mudado (contador é somado mais um número)
+                    print(frase[contador], contador)
+                    contador += 1
 
         For
 
 
-
+    contadores
+    acumuladores
     list
     tupla
     dicionário
@@ -115,3 +143,5 @@
     desempacotamento
 
 """
+
+# print()
