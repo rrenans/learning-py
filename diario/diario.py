@@ -15,10 +15,12 @@
         print() = imprime qualquer coisa
         len() = retorna a quantidade de elementos de qualquer lista, retorna um int
         pass = placeholder
-        continue = não vai ler as linhas de código posteriores
+        continue = não vai ler as linhas de código posteriores. pula para o próximo laço
         break = ela finaliza o laço
         (x += 1) == (x = x + 1)
         iteração = passar por cada um dos elementos de uma string, passar pelos índices
+        range() = ela recebe três parâmetros, start(início), stop(fim), step(pulo).
+                    Por padrão ela inicia em 1, é esperado um fim e pula de 1 em 1.
 
     1. Formatando valores com modificadores:
         :s = Texto (str)
@@ -125,23 +127,47 @@
                     print(frase[contador], contador)
                     contador += 1
 
-        For
+        For = Para
+            texto = 'banana'
+            for letra in texto:
+                # a variável local (letra) passa a receber todos os índices da variável texto,
+                # assim lê-se = para cada letra em texto, imprima a letra
+                print(letra)
 
+            for n in range(10):
+                print(n)
 
-    contadores
-    acumuladores
-    list
-    tupla
-    dicionário
-    funções
-    parâmetros
-    docstring
-    módulo
-    import
-    pacote
-    empacotamento
-    desempacotamento
+    10. List:
+            Utiliza-se colchetes = [], pode receber qualquer tipo de dado
+            Listas também possuem índices, assim como as strings
+            É possível utilizar o fatiamento = [start=0:end=10:step=1]
+
+            Algumas funções para listas:
+                extend = estende o valor de uma segunda lista ou variável na primeira
+                    l1.extend(l2) = l1 passa a ter o valor de l2 também
+                append = insere um novo valor no final da lista
+                    l1.apprend('novo valor')
+                insert = insere um novo valor em um índice pré-definido
+                    l1.insert(1, 'x') = insere o valor 'x' no índice 1
+                pop = remove o último índice da lista
+                    l1.pop() = em uma lista de [1, 2, 3], ela passa a ter apenas [1, 2]
+                del = remove índices, é possível utilizar fatiamento
+                    del(l1[3:5]) = está apagando os índices 3 e 4
+                max = pega o maior valor da lista
+                    max(l1)
+                min = pega o menor valor da lista
+                    min(l1)
+                list = possível criar uma lista a partir de qualquer iterável,
+                        junto com a função range é possível criar uma lista sem muito esforço
+                    l1 = list(range(1, 5)) # [1, 2, 3, 4]
+
+            Ex:
+                l2 = ['String', True, 10, -20.5]
+                #para cada elemento (elem) em/na lista (l2)
+                for elem in l2:
+                # imprima
+                print(f'O tipo de elem é {type(elem)} e seu valor é {elem}')
 
 """
 
-# print()
+
