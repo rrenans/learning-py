@@ -205,3 +205,6 @@
                 print(f'O tipo de elem é {type(elem)} e seu valor é {elem}')
 
 """
+
+aprendiz = ['Gabriel', 'Daira']
+print(aprendiz)
