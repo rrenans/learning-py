@@ -1,6 +1,5 @@
 """
     0. Obs:
-
         << import this >>
         doc funções built-in = https://docs.python.org/3/library/stdtypes.html e
                                 https://docs.python.org/3/library/functions.html
@@ -19,15 +18,26 @@
         break = ela finaliza o laço
         (x += 1) == (x = x + 1)
         iteração = passar por cada um dos elementos de uma string, passar pelos índices
-        cont
+        count() = conta valores
         range() = ela recebe três parâmetros, start(início), stop(fim), step(pulo).
-                    por padrão ela inicia em 1, é esperado um fim e pula de 1 em 1.
+            por padrão ela inicia em 1, é esperado um fim e pula de 1 em 1.
         split() = divide uma string em uma lista
-                    var = 'O Brasil é o país do futebol. O Brasil é penta'
-                    l1 = var.split(' ') # cada vez que encontrar o parâmetro,
-                                        # irá criar um novo índice em uma lista
-        join() = junta uma lista, função de string
+            var = 'O Brasil é o país do futebol. O Brasil é penta'
+            # cada vez que encontrar o parâmetro,
+            # irá criar um novo índice em uma lista
+            l1 = var.split(' ')
+        join() = junta uma lista dentro de uma string / transformar uma lista em uma string
+            # uma string passa a ser uma lista separada por ''
+            # depois esta mesma lista passa a se tornar uma string separada por ','
+            var = 'O Brasil é penta'
+            lista = var.split('')
+            string2 = ','.join(lista)
         enumerate() = enumerar elementos da lista, função de lista, para objetos iteráveis
+            var = 'O Brasil é penta'
+            lista = var.split('') # ['O', 'Brasil', 'é', 'penta']
+
+            for índice, valor in enumerate(lista):
+                print(índice, valor, lista[índice])
 
     1. Formatando valores com modificadores:
         :s = Texto (str)
@@ -159,6 +169,14 @@
             Utiliza-se colchetes = [], pode receber qualquer tipo de dado
             Listas também possuem índices, assim como as strings
             É possível utilizar o fatiamento = [start=0:end=10:step=1]
+            Listas podem estar dentro de outras listas
+                Ex: list =[
+                        [1,2],
+                        [3,4],
+                        [5,6]
+                    ]
+                    for v in lista:
+                        print(v[0]) # pega todos os índices 0
 
             Algumas funções para listas:
                 extend = estende o valor de uma segunda lista ou variável na primeira
@@ -187,5 +205,3 @@
                 print(f'O tipo de elem é {type(elem)} e seu valor é {elem}')
 
 """
-
-
