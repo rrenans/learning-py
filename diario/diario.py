@@ -19,8 +19,15 @@
         break = ela finaliza o laço
         (x += 1) == (x = x + 1)
         iteração = passar por cada um dos elementos de uma string, passar pelos índices
+        cont
         range() = ela recebe três parâmetros, start(início), stop(fim), step(pulo).
-                    Por padrão ela inicia em 1, é esperado um fim e pula de 1 em 1.
+                    por padrão ela inicia em 1, é esperado um fim e pula de 1 em 1.
+        split() = divide uma string em uma lista
+                    var = 'O Brasil é o país do futebol. O Brasil é penta'
+                    l1 = var.split(' ') # cada vez que encontrar o parâmetro,
+                                        # irá criar um novo índice em uma lista
+        join() = junta uma lista, função de string
+        enumerate() = enumerar elementos da lista, função de lista, para objetos iteráveis
 
     1. Formatando valores com modificadores:
         :s = Texto (str)
@@ -135,7 +142,18 @@
                 print(letra)
 
             for n in range(10):
+                # laço simples em que conta de 0 a 9, acrescentando na variável local
                 print(n)
+
+            variável = ['Luiz', 'Renan', 'Bruno']
+            for valor in variável:
+                # for com else
+                if valor.lower().startswith('r'): # essa função olha se o elemento começa com o parâmetro
+                    break
+            else:
+                print('Não começa com R', valor)
+
+
 
     10. List:
             Utiliza-se colchetes = [], pode receber qualquer tipo de dado
