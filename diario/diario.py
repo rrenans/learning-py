@@ -39,6 +39,8 @@
             for índice, valor in enumerate(lista):
                 print(índice, valor, lista[índice])
 
+
+
     1. Formatando valores com modificadores:
         :s = Texto (str)
         :d = Inteiros (int)
@@ -203,5 +205,33 @@
                 for elem in l2:
                 # imprima
                 print(f'O tipo de elem é {type(elem)} e seu valor é {elem}')
+
+            Ex2:
+                Em caso de lista dentro de outra lista:
+                lista = [
+                    ['Renan', 'João', 'Maria'],
+                    ['Joana', 'Alice', 'Fernando']
+                ]
+                print(lista[1][0]) -> primeiro pai depois filho
+
+    11. Desempacotamento
+            lista = ['Luiz', 'João', 'Maria']
+            # n1, n2, n3 = lista -> cada valor/índice da lista irá para uma variável de acordo com sua posição
+            # n1, n2, *n4 = lista -> percebe-se que em casos de não ter variáveis para cada índice,
+            #                           é possível criar uma variável coringa, esta variável é uma lista (utilizando * na frente)
+            # n1, n2, *n4, n5 = lista -> uma variável depois da lista sempre pega o último índice (-1 no caso)
+            # *n4, n5, n6, n7 = lista -> n5, n6, n7 pega os últimos valores da lista, pois está depois da variável com * na frente
+
+    12. Invertendo valores
+            x = 10
+            y = 'Luiz'
+            x, y = y, x -> x recebe y e y recebe x (1º com 1º e 2º com 2º)
+
+    13. Operação ternária
+            logged_user = False
+            msg = 'Usuário logado.' if logged_user else 'Usuário precisa logar.'
+                a variável msg já possui uma operação ternária, isso simplifica muito
+            print(msg)
+
 
 """
