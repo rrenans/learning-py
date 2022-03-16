@@ -50,6 +50,11 @@
         # print(idade)
     global = a palavra global antes de uma variável, define que a variável,
         mesmo que declarada localmente, ela se torna global
+    expresões lambda = funções anônimas, sem nome. sao bastante utilizadas para ordenações
+        a = lambda x, y: x * y
+        print(a(2,2))
+        sorted(lista, key=lambda i: i[0]) -> está ordenando pelo índice 0 de uma lista
+    
         
 
 
