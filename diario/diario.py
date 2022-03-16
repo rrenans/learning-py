@@ -268,6 +268,92 @@
         variáveis podem receber função, porém para serem chamadas, precisam do return no fim da função
         ex: var1 = funcion()
 
-            
+15. Tuplas
+    utiliza-se o ()
+    diferença de uma tupla para uma lista é que a tupla não pode ser alterada,
+    não pode adicionar, remover ou mudar o valor do elemento dentro de uma tupla
+    muito parecido com as listas
+
+16. Dicionário
+    Estrutura de dados que contém chave e valor
+    Utiliza-se {} como símbolo
+
+    sintaxe abaixo:
+    d1 = {'chave': 'valor'}
+
+    Podemos criar também com a função dict, sintaxe abaixo:
+    d1 = dict(chave1='valor da chave1', chave2='valor da chave2')
+
+    Dicionários podem receber qualquer tipo de dados dentro deles
+    d1 = {
+        'str': 'valor1',
+        123: 'valor2'
+        (1,2,3,4): 'valor3',
+        'cliente': {
+            'nome' : 'Renan',
+            'contrato' : 1932
+        }
+    }
+
+    Podemos utilizar a função update para atualizar e criar valores dentro de um dicionário
+    Mas a melhor forma é utilizando os colchetes []
+
+    Um trecho de código muito importante para fazer a iteração de um dicionário dentro de
+    outro dicionário, sintaxe abaixo:
+
+    clientes = {
+        'cliente1': {
+            'nome': 'Renan',
+            'sobrenome': 'Silva',
+        }, 
+        'cliente2': {
+            'nome': 'João',
+            'sobrenome': 'Santos',
+        }, 
+        'cliente3': {
+            'nome': 'Luiz',
+            'sobrenome': 'Pereira',
+        }
+    }
+
+    for clientes_key, clientes_value in clientes.items(): # A função items acessa tudo, no caso, chave e valor
+        print(f'Exibindo {clientes_key}')
+        for dados_key, dados_value in clientes_value.items():
+            print(f'\t{dados_key} = {dados_value}')
+
+17. Conjuntos (sets)
+    É como se estivesse criando uma lista, porém apenas com as chaves ao invés de colchetes
+    Para não confundir com a criação de um dicionário, Sets recebem apenas valores
+    Eles não respeitam ordens
+    Geralmente são utilizados para eliminar elementos duplicados de uma lista
+
+    s1 = {1, 2, 3, 4}
+    s1 = set() # cria um set vazil
+    s1.add(1) # adiciona 1 ao set
+    s1.update('Renan') # muito parecida com o add, porém recebe um iterável e itera sobre o valor
+                    no caso, está recebendo uma string 'Renan', mas quando der um print pode ser
+                    ser retornado = {'a', 'n', 'e', 'n', 'R'}
+    s1.discard(1) # remove o 1 do set
+
+    Funções para set:
+        union -> | :
+            s1 = {1, 2, 3}
+            s2 = {3, 4, 5}
+            s3 = s1 | s3 # Une os dois sets
+
+        intersection -> & :
+            s1 = {1, 2, 3}
+            s2 = {3, 4, 5}
+            s3 = s1 & s3 # Mostra todos os elementos presentes nos dois sets
+
+        difference -> - :
+            s1 = {1, 2, 3, 7}
+            s2 = {3, 4, 5}
+            s3 = s1 - s3 # Elementos apenas no set da esquerda
+
+        symmetric_difference -> ^ :
+            s1 = {1, 2, 3}
+            s2 = {3, 4, 5}
+            s3 = s1 ^ s3 # Elementos que estão nos dois sets, mas não em ambos
 
 """
