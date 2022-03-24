@@ -236,9 +236,11 @@
         lista = ['Luiz', 'João', 'Maria']
         # n1, n2, n3 = lista -> cada valor/índice da lista irá para uma variável de acordo com sua posição
         # n1, n2, *n4 = lista -> percebe-se que em casos de não ter variáveis para cada índice,
-        #                           é possível criar uma variável coringa, esta variável é uma lista (utilizando * na frente)
+        #                           é possível criar uma variável coringa, esta variável é uma lista
+                                        (utilizando * na frente)
         # n1, n2, *n4, n5 = lista -> uma variável depois da lista sempre pega o último índice (-1 no caso)
-        # *n4, n5, n6, n7 = lista -> n5, n6, n7 pega os últimos valores da lista, pois está depois da variável com * na frente
+        # *n4, n5, n6, n7 = lista -> n5, n6, n7 pega os últimos valores da lista,
+                                        pois está depois da variável com * na frente
 
 12. Invertendo valores
         x = 10
