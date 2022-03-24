@@ -356,4 +356,15 @@
             s2 = {3, 4, 5}
             s3 = s1 ^ s3 # Elementos que estão nos dois sets, mas não em ambos
 
+18. List Comprehension
+    É possível iterar sobre uma lista com uma única linha de código
+    l1 = [1, 2, 3]
+    ex1 = [var for var in l1] # não estamos fazendo nada aqui, a não ser a própria iteração
+    ex2 = [var * 2 for var in l1] # foi feita a iteração com uma multiplicação de cada índice
+    ex3 = [(var, var2) for var in l1 for var2 in range(3)] # estou criando duas tuplas, temos dois for
+        o primeiro for está iterando na lista
+        o segundo for está iterando no valor, ou seja, um pega o índice e outro o valor
+    l2 = ['Renan', 'Silva']
+    ex4 = [v.replace('a', '@').upper() for v in l2] # para cada valor dentro da l2, mudar o a por @ e deixar tudo maiúsculo
+
 """
