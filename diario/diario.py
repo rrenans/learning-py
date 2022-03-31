@@ -399,5 +399,4 @@
         g = gera()
         for v in g:
             print(v)
-
 """
