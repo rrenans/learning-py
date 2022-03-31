@@ -381,6 +381,23 @@
         ('chave', 'valor')
     ]
 
-    d1 = {x: y.upper() for x, y in lista} 
+    d1 = {x: y.upper() for x, y in lista}
+
+20. Geradores, Iteradores e Iteráveis:
+    Iterável -> é um objeto que pode-se iterar sobre ele, mas não necessariamente é um iterador
+    Iterador -> ele vai te dar um valor de cada vez sempre que você precisar desse valor
+
+    yield -> define um gerador, gerador retorna um valor de cada vez, sem esperar por todo o resultado
+        chamamos esse acontecimento de lazy evaluation(avaliação preguiçosa)
+
+    para ver na prática, podemos testar o código a seguir:
+        def gera():
+            for n in range(100):
+                yield n
+                time.sleep(0.1)
+
+        g = gera()
+        for v in g:
+            print(v)
 
 """
