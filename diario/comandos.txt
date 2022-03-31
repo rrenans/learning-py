@@ -1,3 +1,4 @@
+Este arquivo terá que se tornar um readme para o github
 Preparando ambiente linux
 
 sudo apt update -y
