@@ -368,5 +368,19 @@
         o segundo for está iterando no valor, ou seja, um pega o índice e outro o valor
     l2 = ['Renan', 'Silva']
     ex4 = [v.replace('a', '@').upper() for v in l2] # para cada valor dentro da l2, mudar o a por @ e deixar tudo maiúsculo
+    ex5 = [(y, x) for x, y in tupla]
+    l3 = list(range(100))
+    ex6 = [v for v in l3 if v % 3 == 0 if v % 8 == 0] # com if
+    ex7 = [v if v % 3 == 0 else 'Não é' for v in l3] # com if e else (todo número divisível por três retorna 'Não é')
+    ex8 = [v if v % 3 == 0 and v % 8 == 0 else 0 for in l3]
+
+19. Dictionary Comprehension
+    Assim como funciona com listas, funciona também com dicionários
+
+    lista = [
+        ('chave', 'valor')
+    ]
+
+    d1 = {x: y.upper() for x, y in lista} 
 
 """
