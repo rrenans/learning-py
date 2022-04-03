@@ -54,7 +54,72 @@
         a = lambda x, y: x * y
         print(a(2,2))
         sorted(lista, key=lambda i: i[0]) -> está ordenando pelo índice 0 de uma lista
-    
+    contadores infinitos = count()
+        é necessário importar -> from itertools import count
+        contador = count()
+        este contador pode receber como parâmetro start, step e end
+        Exemplo:
+            for valor in contador:
+                print(round(valor, 2))
+                if valor >= 10:
+                    break
+    combinations, permutations e product - itertools
+        combinação - ordem não importa
+        permutação - ordem importa
+        ambos não repetem valores únicos
+        produto - ordem importa e recebe valores únicos
+        Exemplo:
+            pessoas = ['Luiz', 'André', 'Eduardo']
+            for grupo in combinations(pessoas, 3):
+                print(grupo)
+    groupby - agrupando valores
+        Exemplo:
+            from itertools import groupby, tee
+
+            alunos = [
+                {'nome': 'Luiz', 'nota': 'A'},
+                {'nome': 'Letícia', 'nota': 'B'},
+                {'nome': 'Fabrício', 'nota': 'A'},
+                {'nome': 'Rosemary', 'nota': 'C'},
+                {'nome': 'Joana', 'nota': 'D'},
+                {'nome': 'João', 'nota': 'A'},
+                {'nome': 'Eduardo', 'nota': 'B'},
+                {'nome': 'André', 'nota': 'C'},
+                {'nome': 'Anderson', 'nota': 'B'},
+            ]
+
+
+            def ordena(item):
+            return item['nota']
+
+
+            alunos.sort(key=ordena)
+            alunos_agrupados = groupby(alunos, ordena)
+
+            '''
+            # Sem tee (com list)
+            for agrupamento, valores_agrupados in alunos_agrupados:
+            valores = list(valores_agrupados)
+            print(f'Agrupamento: {agrupamento}')
+            for aluno in valores:
+                print(f'\t{aluno}')
+            quantidade = len(valores)
+            print(f'\t{quantidade} alunos tiraram nota {agrupamento}')
+            '''
+
+            # Com tee
+            for agrupamento, valores_agrupados in alunos_agrupados:
+            v1, v2 = tee(valores_agrupados)
+
+            print(f'Agrupamento: {agrupamento}')
+
+            for aluno in v1:
+                print(f'\t{aluno}')
+
+            quantidade = len(list(v2))
+            print(f'\t{quantidade} alunos tiraram nota {agrupamento}')
+            
+    Map
         
 
 
@@ -399,5 +464,22 @@
         g = gera()
         for v in g:
             print(v)
-            
+
+21. Unindo iteráveis
+    Zip - Unindo iteráveis
+        une até a menor lista
+    Zip_longest - Itertools
+        une todos os valores e, preenche com none caso uma chave não tenha seu valor
+        o zip_longest tem que importar -> from itertools import zip_longest
+
+    cidades = ['São Paulo', 'Belo Horizonte', 'Salvador', 'Monte Belo']
+    estados = ['SP', 'MG', 'BA']
+
+    cidades_estados = zip(cidades, estados)
+    for valor in cidades_estados:
+        print(valor)
+
+22.
+
+
 """
