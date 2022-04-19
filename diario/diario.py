@@ -530,5 +530,44 @@
     from calculos import multiplica
     import calculos
 
+24. Criando, lendo, escrevendo e apagando arquivos
+    https://docs.python.org/pt-br/3/library/functions.html#open
+
+    # file = open('abc.txt', 'w+')
+    # file.write('Linha1\n')
+    # file.write('Linha2\n')
+    # file.write('Linha3\n')
+
+    # file.seek(0, 0)
+    # print('Lendo linhas:')
+    # print(file.read())
+    # print('#############')
+
+    # file.seek(0, 0)
+    # for linha in file.readlines():
+    #     print(linha, end='')
+    
+    # file..close()
+    # ---------------
+    # try:
+    #     file = open('abc.txt', 'w+')
+    #     file.write('Linha')
+    #     file.seek(0)
+    #     print(file.read())
+    # finally:
+    #     file.close()
+    # ---------------
+    # with open('abc.txt', 'w+') as file:
+    #     file.write('Outra linha\n')
+    #     file.seek(0)
+    #     print(file.read())
+
+25. Funções decoradoras e decoradores
+    cd ../exercicios/decor.py
+26. Parâmetros mutáveis
+    cd ../exercicios/param_mutaveis.py
+
+27.
+
 
 """
