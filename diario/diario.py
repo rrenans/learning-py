@@ -479,7 +479,56 @@
     for valor in cidades_estados:
         print(valor)
 
-22.
+22.Exceções
+    try:
+        a
+    except NameError as erro:
+        print(erro)
+    execpt Exception as erro:
+        print(erro)
+
+        É possível utilizar else depois da exception, para caso o código funcione sem ter erro executar
+        é possível também utilizar a palavrinha finally, que será executado sempre que a exception chegar ao final
+        podemos ter também try dentro de try
+
+        lançando nossa própria exception:
+            https://docs.python.org/3/library/exceptions.html
+
+            def divide(n1, n2):
+                if n2 == 0:
+                    raise ValueError("n2 não pode ser 0.") # lança e relança a excption
+                return n1 / n2
+            
+            try:
+                print(divide(n1=2, n2=0))
+            exception ValueError as error:
+            print(error)
+
+        Podemos usar try e except como condicionais
+            def converte_numero(valor):
+                try:
+                    valor = int(valor)
+                    return valor
+                except ValueError:
+                    try:
+                        valor = float(valor)
+                        return valor
+                    except ValueError:
+                        pass
+
+            numero = converte_numero(input('Digite um número: '))
+            if numero is not None:
+                print(numero * 5)
+            else:
+                print('isso não é um número')
+
+23. Módulos
+    módulos são arquivos .py (que contém código python) e servem para expandir
+    as funcionalidades padrão da linguagem
+    https://docs.python.org/3/py-modindex.html
+
+    from calculos import multiplica
+    import calculos
 
 
 """
