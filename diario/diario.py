@@ -592,6 +592,10 @@
     protected -> métodos e atributos que podem ser acessados apenas dentro da classe ou das filhas daquela classe
     private -> métodos e atributos que só estão disponíveis dentro da classe
 
+    no python utilizamos convenções ao invés destas palavras
+    _dados -> privado fraco = protected/ é um atributo público, que podemos acessar
+    __dados -> privado forte = private/ é um atributo que pode ser acessado a partir do (_NOMECLASSE__nomeatributo)
+
 
 
 """
