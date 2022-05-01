@@ -582,5 +582,16 @@
     utiliza-se a instancia da classe
     p2.falar(p2)
 
+28. Encapsulamento
+    Encapsulamento é o processo de esconder todos os detalhes de um objeto que não contribuem
+    para as suas características essenciais. Na programação orientada a objetos, o encapsulamento
+    se refere ao agrupamento de dados com os métodos que operam nesses dados ou à restrição
+    do acesso direto a alguns dos componentes de um objeto.
+
+    public -> métodos e atributos que podem ser acessados dentro e fora da classe
+    protected -> métodos e atributos que podem ser acessados apenas dentro da classe ou das filhas daquela classe
+    private -> métodos e atributos que só estão disponíveis dentro da classe
+
+
 
 """
