@@ -567,7 +567,20 @@
 26. Parâmetros mutáveis
     cd ../exercicios/param_mutaveis.py
 
-27.
+
+                PROGRAMAÇÃO ORIENTADA A OBJETOS
+
+
+27. Classes
+    Uma classe é uma forma de definir um tipo de dado em uma linguagem orientada a objeto.
+    Ela é formada por dados e comportamentos. Para definir os dados são utilizados os atributos,
+    e para definir o comportamento são utilizados métodos.
+
+    Quando uma função está dentro de uma classe, ela é um método.
+
+    O self serve para usar um método de determinada classe
+    utiliza-se a instancia da classe
+    p2.falar(p2)
 
 
 """
