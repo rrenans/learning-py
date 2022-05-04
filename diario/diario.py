@@ -596,6 +596,10 @@
     _dados -> privado fraco = protected/ é um atributo público, que podemos acessar
     __dados -> privado forte = private/ é um atributo que pode ser acessado a partir do (_NOMECLASSE__nomeatributo)
 
-
+29. Relações de classes
+    Associação - Usa
+    Agregação - Tem
+    Composição - É dono
+    Herança - É
 
 """
