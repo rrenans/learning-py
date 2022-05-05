@@ -1,4 +1,7 @@
 """
+Muito importante para conexão de redes, banco de dados e etc
+Para arquivos que eu necessite abrir e fechar e que eu possa esquecer
+
 class Arquivo:
     def __init__(self, arquivo, modo):
         print('abrindo arquivo')
