@@ -125,10 +125,9 @@
     Métodos mágicos são aqueles que tem dois underlines na frente ou atrás
         eles mudam a forma de como funciona suas classes
         https://rszalski.github.io/magicmethods/
+
+
         
-
-
-
 1. Formatando valores com modificadores:
     :s = Texto (str)
     :d = Inteiros (int)
@@ -612,4 +611,15 @@
     (de mesma assinatua) mas comportamentos diferente
     Mesma assinatura = Mesma quantidade e tipo de parâmetros
 
+    OBS: 
+    Temos uma classe e uma instância da classe, para entender seguimos o exemplo abaixo:
+        Classe
+            classe A:
+                def __init__(self):
+                    print('INIT')
+        Instância da classe
+            a1 = A()
+
+    Mesmo o método __init_ fazendo referência a um construtor, o verdadeiro construtor no python é o 
+        __new__(cls, *args, **kwargs) -> este seria o verdadeiro construtor no python
 """
