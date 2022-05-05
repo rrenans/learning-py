@@ -122,7 +122,9 @@
     No python, o comportamento dos operadores é definido por métodos especiais.
     Vamos alterar o comportamento e operadores com classes definidas pelo usuário.
 
-    Métodos especiais são aqueles que tem dois underlines na frente ou atrás
+    Métodos mágicos são aqueles que tem dois underlines na frente ou atrás
+        eles mudam a forma de como funciona suas classes
+        https://rszalski.github.io/magicmethods/
         
 
 
