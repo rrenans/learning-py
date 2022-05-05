@@ -602,4 +602,9 @@
     Composição - É dono
     Herança - É
 
+30. Polimorfismo
+    É o princípio que permite que classes derivadas de uma mesma superclasse tenham métodos iguais
+    (de mesma assinatua) mas comportamentos diferente
+    Mesma assinatura = Mesma quantidade e tipo de parâmetros
+
 """
