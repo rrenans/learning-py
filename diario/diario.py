@@ -622,4 +622,6 @@
 
     Mesmo o método __init_ fazendo referência a um construtor, o verdadeiro construtor no python é o 
         __new__(cls, *args, **kwargs) -> este seria o verdadeiro construtor no python
+
+31. DocString -> pasta em belasCoisas/
 """
