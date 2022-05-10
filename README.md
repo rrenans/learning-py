@@ -10,8 +10,7 @@ E tem mais, estou sempre disponível para novas dicas, novos aprendizados, seria
 
 
 ## Preparando ambiente linux
-
-
+---
 ### Basta copiar e colar o comando abaixo
 ```
 sudo apt update -y
@@ -27,6 +26,16 @@ sudo snap install pycharm-community --classic
 ```
 
 ## Preparando ambiente windows
+---
+### Basta copiar e colar no seu navegador
+### Depois é seguir o passo a passo
+### Futuramente irei documentar melhor
 
-Documentação para instalar o Python no WIndows
-https://www.python.org/downloads/windows/
+---
+### Documentação para instalar o Python no Windows
+
+    https://www.python.org/downloads/windows/
+
+### Documentação para instalar a IDE PyCharm no Windows
+    
+    https://www.jetbrains.com/pycharm/download/#section=windows
