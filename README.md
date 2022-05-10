@@ -7,3 +7,17 @@ Tenho arquivos essenciais como por exemplo o diário, o Diário nada mais é que
 Além disso, futuramente voltarei para refatorar todos os códigos, meu foco no momento está em aprender e não em organizar, acabaria perdendo muito tempo dos meus estudos assim.
 
 E tem mais, estou sempre disponível para novas dicas, novos aprendizados, seria um enorme prazer aprender com quem tem mais experiência.
+
+
+## Preparando ambiente linux
+
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt install curl -y
+sudo apt install git -y
+
+sudo apt install python3.8 python3.8-dev python3.8-venv \
+  python3-venv idle-python3.8 python3-pip virtualenv gcc \
+  default-libmysqlclient-dev libssl-dev -y
+
+sudo snap install pycharm-community --classic
