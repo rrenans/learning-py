@@ -11,6 +11,9 @@ E tem mais, estou sempre disponível para novas dicas, novos aprendizados, seria
 
 ## Preparando ambiente linux
 
+
+### Basta copiar e colar o comando abaixo
+```
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install curl -y
@@ -21,3 +24,9 @@ sudo apt install python3.8 python3.8-dev python3.8-venv \
   default-libmysqlclient-dev libssl-dev -y
 
 sudo snap install pycharm-community --classic
+```
+
+## Preparando ambiente windows
+
+Documentação para instalar o Python no WIndows
+https://www.python.org/downloads/windows/
