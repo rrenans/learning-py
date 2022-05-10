@@ -1,5 +1,7 @@
 """
 
+                PYTHON BÁSICA -> LÓGICA DE PROGRAMAÇÃO
+
 0. Obs:
     << import this >>
     doc funções built-in = https://docs.python.org/3/library/stdtypes.html e
@@ -322,6 +324,13 @@
             a variável msg já possui uma operação ternária, isso simplifica muito
         print(msg)
 
+
+
+
+
+
+                PYTHON INTERMEDIÁRIO -> PROGRAMAÇÃO PROCEDURAL
+
 14. Funções
         def funcion():
             print('Olá mundo!'):
@@ -570,6 +579,10 @@
     cd ../exercicios/decor.py
 26. Parâmetros mutáveis
     cd ../exercicios/param_mutaveis.py
+
+
+
+
 
 
                 PROGRAMAÇÃO ORIENTADA A OBJETOS
