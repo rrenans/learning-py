@@ -637,4 +637,6 @@
         __new__(cls, *args, **kwargs) -> este seria o verdadeiro construtor no python
 
 31. DocString -> pasta em belasCoisas/
+
+teste
 """
