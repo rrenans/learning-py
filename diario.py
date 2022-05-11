@@ -638,5 +638,4 @@
 
 31. DocString -> pasta em belasCoisas/
 
-teste
 """
