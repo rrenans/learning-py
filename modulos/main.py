@@ -17,8 +17,8 @@ bitrate_audio = '-b:a 320k'
 debug = '-ss 00:00:00 -to 00:00:10'
 debug = ''
 
-caminho_origem = '/home/luizotavio/Desktop/videos'
-caminho_destino = '/home/luizotavio/Desktop/saida'
+caminho_origem = '/'
+caminho_destino = '/'
 
 
 for raiz, pastas, arquivos in os.walk(caminho_origem):
@@ -47,7 +47,3 @@ for raiz, pastas, arquivos in os.walk(caminho_origem):
             f'{debug} {map_legenda} "{arquivo_saida}"'
 
         os.system(comando)
-
-
-
-
