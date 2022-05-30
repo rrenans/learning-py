@@ -39,3 +39,10 @@ sudo snap install pycharm-community --classic
 ### Documentação para instalar a IDE PyCharm no Windows
     
     https://www.jetbrains.com/pycharm/download/#section=windows
+
+# Não esquecer de instalar as dependências
+- Banco de Dados (SQLite, MySQL e MariaDB)
+- PyQT5
+- QTDesigner
+- Módulos
+- etc...
