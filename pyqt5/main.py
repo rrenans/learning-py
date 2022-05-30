@@ -15,6 +15,7 @@ class App(QMainWindow):
         super().__init__(parent)
         self.cw = QWidget()
         self.grid = QGridLayout(self.cw)
+        self.setWindowTitle('Botão')
 
         self.btn = QPushButton('Texto do botão')
         self.btn.setStyleSheet('font-size: 40px;')
