@@ -46,3 +46,4 @@ sudo snap install pycharm-community --classic
 - QTDesigner
 - Módulos
 - etc...
+- db browser for sqlite
