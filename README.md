@@ -47,3 +47,9 @@ sudo snap install pycharm-community --classic
 - Módulos
 - etc...
 - db browser for sqlite
+
+python3 manage.py runserver -> rodar o servidor
+python3 manage.py startapp "nome app" -> para criar os apps
+django-admin startproject "nome projeto" . -> cria projeto
+python3 -m venv venv -> cria ambiente virtual
+pipenv install django -> instala djangos
