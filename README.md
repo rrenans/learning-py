@@ -53,3 +53,6 @@ python3 manage.py startapp "nome app" -> para criar os apps
 django-admin startproject "nome projeto" . -> cria projeto
 python3 -m venv venv -> cria ambiente virtual
 pipenv install django -> instala djangos
+primeiro passo ao criar o app é colocar no settings da pasta principal
+segundo passo é coloca nas urls
+terceiro passo criar o app com suas views e urls
